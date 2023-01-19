@@ -1,4 +1,8 @@
-# Tmp
+# NX Storybook MDX Issue
+
+## Note!
+
+This repository solely works as a reproduction example of the issue with `@nrwl/storybook@15.5.2+`
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 

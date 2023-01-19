@@ -1,5 +1,7 @@
 import styles from './index.module.scss';
 
+import { AppCompo } from '../components/app-comp';
+
 export function Index() {
   /*
    * Replace the elements below with your own.
@@ -17,6 +19,7 @@ export function Index() {
             </h1>
           </div>
 
+          <AppCompo />
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>

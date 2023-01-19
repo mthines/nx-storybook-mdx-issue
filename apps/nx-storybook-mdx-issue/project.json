@@ -57,6 +57,33 @@
       "options": {
         "lintFilePatterns": ["apps/nx-storybook-mdx-issue/**/*.{ts,tsx,js,jsx}"]
       }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/react",
+        "port": 4400,
+        "configDir": "apps/nx-storybook-mdx-issue/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "uiFramework": "@storybook/react",
+        "outputDir": "dist/storybook/nx-storybook-mdx-issue",
+        "configDir": "apps/nx-storybook-mdx-issue/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
     }
   },
   "tags": []
